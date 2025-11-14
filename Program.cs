@@ -30,9 +30,12 @@ if (app.Environment.IsDevelopment())
 
 var todoItems = app.MapGroup("/todoitems");
 
+// get all todos
 todoItems.MapGet("/", async (TodoDb db) =>
     await db.Todos.ToListAsync());
 
+
+// get completed todos
 todoItems.MapGet("/complete", async (TodoDb db) =>
     await db.Todos.Where(t => t.IsComplete).ToListAsync());
 

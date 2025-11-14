@@ -26,7 +26,5 @@ This project demonstrates clean minimal API structure using **route groups**, CR
 - **NSwag (OpenAPI/Swagger)**
 - **C# 13**
 
----
 
-## Project Structure
 
